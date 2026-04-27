@@ -6,9 +6,8 @@ function showOnScroll() {
 
     elements.forEach(el => {
         const elementTop = el.getBoundingClientRect().top;
-        const elementBottom = el.getBoundingClientRect().bottom;
 
-        if (elementTop < triggerBottom && elementBottom > 0) {
+        if (elementTop < triggerBottom) {
             el.classList.add('show');
         }
     });
@@ -16,5 +15,16 @@ function showOnScroll() {
 
 window.addEventListener('scroll', showOnScroll);
 
-// uruchom przy załadowaniu
+
 showOnScroll();
+
+
+const indicator = document.querySelector('.scroll-indicator');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        indicator.style.opacity = '0';
+    } else {
+        indicator.style.opacity = '1';
+    }
+});
