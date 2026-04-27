@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5124ae;
+    padding: 15px 30px;
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.nav-links a:hover {
+    color: #90a3c3;
+}
+
+
+
+footer {
+    background-color: #5124ae;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+.home {
+    padding: 40px;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 80px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.me {
+    text-align: center;
+    margin-bottom: 40px;
+
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.me h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+
+
+}
+
+.about-me, .skills, .frameworks {
+    margin-bottom: 30px;
+}
+
+.me {
+    background: #f8fafc;
+}
+
+.about-me {
+    background: #e2e8f0;
+}
+
+.skills {
+    background: #f1f5f9;
+}
+
+.frameworks {
+    background: #e2e8f0;
+}
+
+.skills ul, .frameworks ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li, .frameworks li {
+    background: #e2e8f0;
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.skills li:hover,
+.frameworks li:hover {
+    background: #cbd5e1;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
