@@ -28,3 +28,10 @@ window.addEventListener('scroll', () => {
         indicator.style.opacity = '1';
     }
 });
+
+
+
+
+
+
+

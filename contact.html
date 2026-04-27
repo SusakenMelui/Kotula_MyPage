@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <title>Kontakt</title>
+
 </head>
 <body>
 <nav>
@@ -20,9 +21,45 @@
 </nav>
 
 
-<main>
+<main class="contact-page">
 
-    <!--//tu będzie reszta-->
+    <section class="contact">
+
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Napisz do mnie</p>
+
+            <form class="contact-form"  >
+
+                <label>Imię</label>
+                <input type="text" id="name" placeholder="Twoje imię" required>
+
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Twój email" required>
+
+
+                <label>Temat</label>
+                <select required id="tepic">
+                    <option value="">Wybierz temat</option>
+                    <option value="general">Ogólne pytanie</option>
+                    <option value="job">Oferta pracy</option>
+                    <option value="project">Projekt</option>
+                    <option value="other">Inne</option>
+                </select>
+
+                <label>Wiadomość</label>
+                <textarea id="text" rows="6" placeholder="Twoja wiadomość..." required></textarea>
+
+
+                <button type="submit">Wyślij</button>
+
+
+            </form>
+        </div>
+
+    </section>
+
 </main>
 
 
@@ -31,5 +68,6 @@
     <p>© 2026 Dawid Kotula</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
