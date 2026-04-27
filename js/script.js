@@ -1,4 +1,3 @@
-
 const elements = document.querySelectorAll('.hidden');
 
 function showOnScroll() {
