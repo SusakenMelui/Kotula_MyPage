@@ -407,4 +407,23 @@ textarea:focus {
 
 
 
+.in-progress {
+    background: url("/images/inprogres.jpg") center/cover no-repeat;
+    color: white;
+    position: relative;
+}
 
+.in-progress::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+.in-progress h3,
+.in-progress p,
+.in-progress span {
+    position: relative;
+    z-index: 1;
+}
