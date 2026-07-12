@@ -18,6 +18,7 @@ nav {
 
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .icon {
@@ -381,10 +382,8 @@ textarea:focus {
     transition: 0.3s ease;
 
     text-align: left;
-
-
-    text-decoration: none;
-    color: inherit;
+    position: relative;
+    cursor: pointer;
 }
 
 .project-card h3 {
@@ -426,4 +425,24 @@ textarea:focus {
 .in-progress span {
     position: relative;
     z-index: 1;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.github-link {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 24px;
+    text-decoration: none;
+    scale: 35%;
+    z-index: 10;
+}
+
+.github-link:hover {
+    transform: scale(1.15);
 }
