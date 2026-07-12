@@ -407,7 +407,7 @@ textarea:focus {
 
 
 .in-progress {
-    background: url("/images/inprogres.jpg") center/cover no-repeat;
+    background: url("../images/inprogres.jpg") center/cover no-repeat;
     color: white;
     position: relative;
 }
