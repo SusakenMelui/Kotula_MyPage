@@ -407,6 +407,7 @@ textarea:focus {
 
 
 .in-progress {
+    /*Działa - zrobione tak dla GitHubPages*/
     background: url("/Kotula_MyPage/images/inprogres.jpg") center/cover no-repeat;
     color: white;
     position: relative;
